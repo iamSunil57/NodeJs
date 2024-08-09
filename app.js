@@ -11,7 +11,7 @@ const Book = require("./model/bookModel");
 // const { multer,storage } = require("./middleware/multerConfig");
 const multer = require("./middleware/multerConfig").multer;
 const storage = require("./middleware/multerConfig").storage;
-const upload = multer({ storage: storage, limits: limits });
+const upload = multer({ storage: storage });
 
 // To parse incoming JSON requests
 app.use(express.json());
